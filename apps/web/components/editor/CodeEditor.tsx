@@ -8,6 +8,7 @@ import { useEditorSettingsStore } from "@/store/editor-settings";
 const DEFAULT_OPTIONS = {
   fixedOverflowWidgets: true,
   lineNumbers: "on",
+  
   tabSize: 2,
   insertSpaces: false,
   minimap: {
@@ -42,7 +43,7 @@ function CodeEditor({
       onChange={onChange}
       onMount={onMount}
       options={editorOptions}
-      theme={"dark"}
+      theme={"vs-dark"}
       value={value}
     />
   );
