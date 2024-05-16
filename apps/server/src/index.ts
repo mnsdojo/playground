@@ -1,6 +1,5 @@
 import express from "express";
 const port = process.env.PORT || 8080;
-import ts from "typescript";
 
 import { createServer } from "http";
 import SocketService from "./services/socket";

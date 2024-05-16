@@ -3,7 +3,7 @@
 import React from "react";
 import { useMemo } from "react";
 
-import Editor, { loader, type EditorProps } from "@monaco-editor/react";
+import Editor, {  type EditorProps } from "@monaco-editor/react";
 import { useEditorSettingsStore } from "@/store/editor-settings";
 const DEFAULT_OPTIONS = {
   fixedOverflowWidgets: true,
@@ -42,7 +42,7 @@ function CodeEditor({
       defaultLanguage="typescript"
       onChange={onChange}
       onMount={onMount}
-      options={{ ...options }}
+      options={editorOptions}
       theme={"vs-dark"}
       value={value}
     />
