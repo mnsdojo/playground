@@ -6,6 +6,7 @@ import CodeEditor from "@/components/editor/CodeEditor";
 const PlayGround: React.FC = () => {
   const { socket } = useSocket(process.env.WEBSOCKET_URL!, {
     enabled: true,
+    transports: ["websocket"],
   });
 
   const [code] = useState("");
